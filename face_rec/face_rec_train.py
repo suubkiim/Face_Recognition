@@ -22,7 +22,7 @@ tf.logging.set_verbosity(tf.logging.ERROR)
 
 train_img_dir = 'train_images'
 # http://vis-www.cs.umass.edu/lfw/
-categories = ['Arnold_Schwarzenegger', 'Subin_Kim', 'Hyeongwon_Kang', 'Jina_Kim', 'Eusuk_Chung']
+categories = [name for name in os.listdir(train_img_dir) if os.path.isdir(os.path.join(train_img_dir, name))]
 extensions = ['png', 'bmp', 'jpg']  # lower case only
 
 #

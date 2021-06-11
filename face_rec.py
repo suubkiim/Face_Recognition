@@ -1,10 +1,10 @@
+import os
 import sys
 import numpy as np
 import cv2
 
-
-face_name = ['Arnold_Schwarzenegger', 'Subin_Kim', 'Hyeongwon_Kang', 'Jina_Kim', 'Eusuk_Chung']
-
+train_img_dir = 'face_rec/train_images'
+face_name = [name for name in os.listdir(train_img_dir) if os.path.isdir(os.path.join(train_img_dir, name))]
 
 def face_recognition(recognition_net, crop):
     gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
