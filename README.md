@@ -32,6 +32,7 @@ This script saves the cropped face images in `face_rec/outputs` directory.
 ## Train the network with new data
 
 1. Save train images
+
 Save train images in the directory `face_rec/train_images`.
 Images for each person should be separated by the folder named `{Person_Name}`.
 
@@ -54,6 +55,7 @@ $ python face_rec_train.py --num_epochs 200 --minimum_cost 5e-06
 ```
 
 ## Test with the camera.
+
 - Run the script `face_rec.py` and check the name of recognized face.
 ```
 $ python face_rec.py
