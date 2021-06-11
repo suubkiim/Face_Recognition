@@ -55,7 +55,7 @@ try:
     if not os.path.exists(outdir):
         os.makedirs(outdir)
 except OSError:
-    print('output folter create failed!')
+    print('output folder create failed!')
 
 png_list = glob.glob(prefix + '*.png')
 if len(png_list) > 0:
