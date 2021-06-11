@@ -47,7 +47,7 @@ train_images/
   └── etc.
 ```
 
-2. Run face_rec_train.py and update face_rec.pb file.
+2. Run `face_rec_train.py` and update `face_rec.pb` file.
 
 - Sample Usage
 ```
