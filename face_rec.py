@@ -5,6 +5,7 @@ import cv2
 
 train_img_dir = 'face_rec/train_images'
 face_name = [name for name in os.listdir(train_img_dir) if os.path.isdir(os.path.join(train_img_dir, name))]
+face_name.sort()
 
 def face_recognition(recognition_net, crop):
     gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
