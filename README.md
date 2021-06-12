@@ -50,9 +50,13 @@ train_images/
 
 2. Run `face_rec_train.py` and update `face_rec.pb` file.
 
-- Sample Usage
+- Sample Usage (CPU)
 ```
 $ python face_rec_train.py --num_epochs 200 --minimum_cost 5e-06
+```
+- Sample Usage (GPU)
+```
+$ python face_rec_train_gpu.py --num_epochs 200 --minimum_cost 5e-06
 ```
 
 ## Test with the camera.
