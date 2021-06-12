@@ -9,6 +9,7 @@ Face_Recognition/
   │   ├── face_capture.py
   │   ├── face_rec.pb
   │   ├── face_rec_train.py
+  │   ├── face_rec_train_gpu.py
   │   └── train_images
   ├── face_rec.py
   └── opencv_face_detector
