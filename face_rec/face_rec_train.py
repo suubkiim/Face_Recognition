@@ -21,7 +21,6 @@ FLAGS = None
 tf.logging.set_verbosity(tf.logging.ERROR)
 
 train_img_dir = 'train_images'
-# http://vis-www.cs.umass.edu/lfw/
 categories = [name for name in os.listdir(train_img_dir) if os.path.isdir(os.path.join(train_img_dir, name))]
 categories.sort()
 
@@ -220,7 +219,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--minimum_cost',
         type=float,
-        default=0.000005,
+        default=0.000001,
         help='Minimum cost to stop learning.'
     )
     parser.add_argument(
