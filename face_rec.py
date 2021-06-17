@@ -3,11 +3,19 @@ import sys
 import numpy as np
 import cv2
 
+
+# Set the path of dataset
 train_img_dir = 'face_rec/train_images'
 face_name = [name for name in os.listdir(train_img_dir) if os.path.isdir(os.path.join(train_img_dir, name))]
 face_name.sort()
 
+
 def face_recognition(recognition_net, crop):
+    '''
+    
+    
+    '''
+    
     gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
 
     blob = cv2.dnn.blobFromImage(gray, 1 / 255., (150, 200))
